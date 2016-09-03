@@ -28,6 +28,7 @@ set number
 set relativenumber
 set hlsearch
 set incsearch
+set cindent
 
 " exit vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
