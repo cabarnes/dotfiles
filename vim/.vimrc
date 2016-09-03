@@ -14,6 +14,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'Flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -30,6 +32,9 @@ set relativenumber
 set hlsearch
 set incsearch
 set cindent
+
+" display the statusline always
+:set laststatus=2
 
 " exit vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
