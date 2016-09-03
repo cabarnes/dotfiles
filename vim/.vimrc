@@ -33,6 +33,12 @@ set hlsearch
 set incsearch
 set cindent
 
+" easier split navigation
+nmap <silent> <c-up> :wincmd k<CR>
+nmap <silent> <c-down> :wincmd j<CR>
+nmap <silent> <c-left> :wincmd h<CR>
+nmap <silent> <c-right> :wincmd l<CR>
+
 " display the statusline always
 :set laststatus=2
 
