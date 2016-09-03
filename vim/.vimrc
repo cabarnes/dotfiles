@@ -13,6 +13,7 @@ Plugin 'kergoth/vim-bitbake'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
