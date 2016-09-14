@@ -1,18 +1,15 @@
 #!/bin/bash
 
 echo -n 'Checking for vim...'
-dpkg -s vim &> /dev/null
+dpkg -s vim &> /dev/null || dpkg -s vim-gtk &> /dev/null || dpkg -s vim-gnome &> /dev/null
 if [ $? -eq 0 ]; then
 	echo 'success'
 else
-	dpkg -s vim-gnome &> /dev/null
-	if [ $? -eq 0 ]; then
-		echo 'success'
-	else
-		echo 'error: not found'
-		exit -1
-	fi
+	echo 'error: not found'
+	exit -1
 fi
+
+exit 0
 
 echo -n 'Installing Vundle...'
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
