@@ -9,8 +9,6 @@ else
 	exit -1
 fi
 
-exit 0
-
 echo -n 'Installing Vundle...'
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
 if [ $? -eq 0 ]; then
