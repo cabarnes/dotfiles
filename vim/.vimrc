@@ -45,6 +45,9 @@ nmap <silent> <c-right> :wincmd l<CR>
 " display the statusline always
 :set laststatus=2
 
+" disable folding for riv
+let g:riv_disable_folding=1
+
 " call flake8 on save
 autocmd BufWritePost *.py call Flake8()
 
