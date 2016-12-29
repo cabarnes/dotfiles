@@ -11,6 +11,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kergoth/vim-bitbake'
 Plugin 'django.vim'
+Plugin 'nvie/vim-flake8'
 Plugin 'rykka/riv.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Flazz/vim-colorschemes'
@@ -43,6 +44,9 @@ nmap <silent> <c-right> :wincmd l<CR>
 
 " display the statusline always
 :set laststatus=2
+
+" call flake8 on save
+autocmd BufWritePost *.py call Flake8()
 
 " exit vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
