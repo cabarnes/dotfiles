@@ -47,6 +47,9 @@ nmap <silent> <c-right> :wincmd l<CR>
 
 " disable folding for riv
 let g:riv_disable_folding=1
+" ignore .pyc files
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+map <leader>n :NERDTreeToggle<CR>
 
 " call flake8 on save
 autocmd BufWritePost *.py call Flake8()
