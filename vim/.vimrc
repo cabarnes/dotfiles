@@ -11,7 +11,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kergoth/vim-bitbake'
 Plugin 'django.vim'
-Plugin 'nvie/vim-flake8'
+Plugin 'klen/python-mode'
 Plugin 'rykka/riv.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Flazz/vim-colorschemes'
@@ -52,9 +52,20 @@ let g:riv_disable_folding=1
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <leader>n :NERDTreeToggle<CR>
 
-" call flake8 on save
-autocmd BufWritePost *.py call Flake8()
-
 " exit vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" python-mode
+let g:pymode_breakpoint = 1 " Enable breakpoints
+let g:pymode_breakpoint_bind = '<leader>b' " Breakpoint binding
+let g:pymode_breakpoint_cmd = 'import pdb; pdb.set_trace()'
+let g:pymode_folding = 0 " Disable folding
+let g:pymode_indent = 1 " Enable pep8 compliant indents
+let g:pymode_lint = 1 " Enable linting
+let g:pymode_lint_on_write = 1 " Run linters when file is saved
+let g:pymode_lint_checkers = ['pyflakes', 'pep8'] " Linters to run
+let g:pymode_lint_unmodified = 1 " Lint on save even if unmodified
+let g:pymode_lint_on_fly = 1 " Lint on the fly
+let g:pymode_lint_signs = 1 " Show lint problems next to line numbers
+let g:pymode_lint_cwindow = 0 " Hide lint window
+let g:pymode_rope = 0 " Disable rope
