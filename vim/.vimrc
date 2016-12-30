@@ -46,6 +46,11 @@ nmap <silent> <c-right> :wincmd l<CR>
 " display the statusline always
 :set laststatus=2
 
+" Line length indicators
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%79v.\+/
+set colorcolumn=79
+
 " disable folding for riv
 let g:riv_disable_folding=1
 " ignore .pyc files
