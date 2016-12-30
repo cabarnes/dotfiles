@@ -35,6 +35,7 @@ set relativenumber
 set hlsearch
 set incsearch
 set cindent
+set cursorline
 
 " easier split navigation
 nmap <silent> <c-up> :wincmd k<CR>
