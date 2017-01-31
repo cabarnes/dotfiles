@@ -10,7 +10,6 @@ Plugin 'vivien/vim-addon-linux-coding-style'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kergoth/vim-bitbake'
-Plugin 'django.vim'
 Plugin 'klen/python-mode'
 Plugin 'rykka/riv.vim'
 Plugin 'Raimondi/delimitMate'
@@ -26,6 +25,7 @@ filetype plugin indent on
 filetype on
 
 autocmd FileType html setlocal tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType htmldjango setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType javascript setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType php setlocal tabstop=2|set shiftwidth=2|set expandtab
