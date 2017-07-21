@@ -56,6 +56,7 @@ let g:riv_disable_folding=1
 " ignore .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <leader>n :NERDTreeToggle<CR>
+au FileType python map <leader>d oimport ipdb; ipdb.set_trace()<esc>
 
 " exit vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
