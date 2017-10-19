@@ -9,13 +9,15 @@ else
 	exit -1
 fi
 
-echo -n 'Installing Vundle...'
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
-if [ $? -eq 0 ]; then
-	echo 'done'
-else
-	echo 'error: unable to install'
-	exit -1
+if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
+	echo -n 'Installing Vundle...'
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
+	if [ $? -eq 0 ]; then
+		echo 'done'
+	else
+		echo 'error: unable to install'
+		exit -1
+	fi
 fi
 
 echo -n 'Installing .vimrc...'
