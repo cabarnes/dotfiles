@@ -7,8 +7,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vivien/vim-addon-linux-coding-style'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kergoth/vim-bitbake'
 Plugin 'klen/python-mode'
 Plugin 'rykka/riv.vim'
