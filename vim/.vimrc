@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vivien/vim-addon-linux-coding-style'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kergoth/vim-bitbake'
 Plugin 'klen/python-mode'
@@ -28,6 +29,7 @@ filetype on
 autocmd FileType html setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType htmldjango setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType javascript setlocal tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType vue setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType php setlocal tabstop=2|set shiftwidth=2|set expandtab
 
