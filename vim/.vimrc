@@ -32,6 +32,7 @@ autocmd FileType javascript setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType vue setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType php setlocal tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType yaml setlocal tabstop=2|set shiftwidth=2|set expandtab
 
 set number
 set relativenumber
