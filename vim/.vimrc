@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'martinda/jenkinsfile-vim-syntax'
 
 call vundle#end()
 
@@ -33,6 +34,7 @@ autocmd FileType vue setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType php setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType yaml setlocal tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType Jenkinsfile setlocal tabstop=4|set shiftwidth=4|set expandtab
 
 set number
 set relativenumber
