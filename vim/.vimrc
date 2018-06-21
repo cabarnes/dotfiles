@@ -34,6 +34,7 @@ autocmd FileType vue setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType css setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType php setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType yaml setlocal tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType json setlocal tabstop=2|set shiftwidth=2|set expandtab
 autocmd FileType Jenkinsfile setlocal tabstop=4|set shiftwidth=4|set expandtab
 
 set number
